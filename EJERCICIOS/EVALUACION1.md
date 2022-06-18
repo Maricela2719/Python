@@ -18,3 +18,5 @@ El intérprete de Python está disponible en multitud de plataformas (UNIX, Sola
 
 1.3 Ejercicio 1 (2 puntos)
 Escribir un programa que pregunte al usuario su nombre, y luego lo salude.
+
+https://github.com/Maricela2719/Python/blob/main/EJERCICIOS/Evaluacion1-ejercicio1.ipynb
