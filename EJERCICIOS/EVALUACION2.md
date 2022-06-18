@@ -20,3 +20,6 @@ Calcular el perímetro y área de un rectángulo dada su base y su altura.
 Respuesta:
 
 
+Liga de los programas:
+
+https://github.com/Maricela2719/Python/blob/main/EJERCICIOS/Evaluacion2-ejercicio1%2C2%2C3.ipynb
