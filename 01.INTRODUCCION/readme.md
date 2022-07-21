@@ -127,54 +127,20 @@ Selecciona la palomita para ver el resultado.
 
 Ahora necesitas ejecutar tu notebook. Elige un kernel de la lista desplegable en la parte superior derecha. Es posible que tengas uno o varios núcleos para elegir, así que asegúrese de elegir un kernel de Python 3.
 
-
-### Crear código ejecutable
-
-Ahora puedes agregar algo de código al notebook. Agreguemos una forma de mostrar un widget para iniciar el notebook.
-
-Primero, debes instalar una biblioteca llamada ``ipywidgets``. Instala la biblioteca agregando un nuevo bloque de código debajo del bloque de título del notebook. Utilizando el administrador de paquetes de Python ``pip``, para instalar la biblioteca.
-
-``pip install ipywidgets``
-
-![image](https://user-images.githubusercontent.com/91554777/173451981-6eecb098-5b0b-4745-a962-49d2c8f4522d.png)
-
-Después de instalarlo, te pedirá que reinicies el kernel. Basta con dar clic en la sección señalada de amarillo para reiniciar el kernel.
-
-![image](https://user-images.githubusercontent.com/91554777/173452013-0cc65a48-bc49-41ca-9ba5-ca873cce0247.png)
-
-A continuación, crearemos un botón en el notebook que, cuando se presiona, muestra un mensaje.
-
-En un nuevo bloque de código, agrega el código siguiente:
-
-```
-import ipywidgets as widgets
-
-prueba = widgets.ToggleButton(
-    value=False,
-    description='Iniciar prueba',
-    button_style='success',
-    tooltip='prueba de instalacion',
-    icon='rocket'
-)
-
-output = widgets.Output()
-
-display(prueba, output)
-
-def on_value_change(change):
-    with output:
-        if change['new'] == True:
-            print("Prueba iniciada")
-        else:   
-            print("Prueba detenida")
-
-prueba.observe(on_value_change, names='value')
-```
+## Google colab
+![image](https://user-images.githubusercontent.com/91554777/180096946-68797afb-2539-4d91-9caa-aee57f8534a3.png)
 
 
-¿Qué está pasando aquí? Utilizamos la biblioteca ``ipywidget`` para crear un botón y éste escucha cuando hacemos un clic provocando que su valor cambie, imprimiendo el mensaje observado.
+Colaboratory, o "Colab" para abreviar, es un producto de Google Research. Permite a cualquier usuario escribir y ejecutar código arbitrario de Python en el navegador. Es especialmente adecuado para tareas de aprendizaje automático, análisis de datos y educación. Desde un punto de vista más técnico, Colab es un servicio de cuaderno alojado de Jupyter que no requiere configuración y que ofrece acceso sin coste adicional a recursos informáticos.
 
+### ¿Qué diferencia hay entre Jupyter y Colab?link
+Jupyter es el proyecto de código abierto en el que se basa Colab. Colab te permite usar y compartir cuadernos de Jupyter con otros usuarios sin tener que descargar, instalar ni ejecutar nada.
 
-https://minhaskamal.github.io/DownGit/#/home
+### ¿Dónde se almacenan mis cuadernos? ¿Puedo compartirlos?link
+Todos los cuadernos de Colab se almacenan en Google Drive o puedes cargarlos desde GitHub. Los cuadernos de Colab se pueden compartir igual que los archivos de Documentos de Google y Hojas de cálculo de Google. Para hacerlo, haz clic en el botón Compartir que está situado en la parte superior derecha de todos los cuadernos de Colaboratory o sigue estas instrucciones para compartir archivos en Google Drive.
+
+## Python online
+
+Adicional a las opciones anteriores, también podemos usar en linea Python, hay varios sitios donde podemos acceder y hacer uso del lenguaje.
 
 https://replit.com/languages/python3
