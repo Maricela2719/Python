@@ -2,9 +2,9 @@
 Proyecto Básico de Python (El Ahorcado).
 Basado en el proyecto de: Kylie Ying (@kylieyying). 
 """
-import random
-import string
-from palabras import palabras
+import random #se llama al módulo random de la librería estándar para generar números pseudoaleatorios
+import string #se llama al módulo string de la libreriía estándar 
+from palabras import palabras #trae las palabras con las que se jugarán del archivo palabras
 from ahorcado_diagramas import vidas_diccionario_visual
 
 
